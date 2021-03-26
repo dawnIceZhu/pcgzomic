@@ -6,6 +6,10 @@ import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 import '@/styles/base.less'
 
+import Carousel3d from "vue-carousel-3d";
+
+Vue.use(Carousel3d);
+
 Vue.config.productionTip = false
 
 Vue.use(Antd)
