@@ -92,6 +92,11 @@
         </ul>
       </div>
 
+      <div class="omick-what">
+        <router-link to="">
+          <span>欧米奇学费怎么样?</span>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

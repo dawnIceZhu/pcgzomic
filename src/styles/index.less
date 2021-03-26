@@ -146,12 +146,14 @@
   }
 
   .floor {
-    width: 750px;
+    width: 950px;
     height: 302px;
     background-color: #000;
     position: absolute;
     bottom: 150px;
-    left: 505px;
+    //left: 505px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, .4);
     padding-left: 20px;
     font-size: 14px;
@@ -188,6 +190,40 @@
           float: right;
           margin: 30px 30px 0 0;
         }
+      }
+    }
+  }
+
+  .omick-what {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    a {
+      display: block;
+      margin: 0 auto;
+      width: 251px;
+      height: 47px;
+      font-size: 17px;
+      text-align: center;
+      border: 1px solid #dda841;
+      color: #000;
+
+      span {
+        position: relative;
+        top: -6px;
+        left: -6px;
+        z-index: 5;
+        display: block;
+        width: 250px;
+        line-height: 45px;
+        background-color: #dca436;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        color: #2b2929;
       }
     }
   }
