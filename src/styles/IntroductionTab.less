@@ -1,5 +1,6 @@
 .introduction-tab {
   margin-top: 66px;
+  position: relative;
 
   .title-tab {
     position: relative;
@@ -120,5 +121,48 @@
         }
       }
     }
+  }
+
+  .box-link {
+    margin-top: 30px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      margin: 0 auto;
+      width: 251px;
+      height: 47px;
+      font-size: 17px;
+      text-align: center;
+      border: 1px solid #000;
+      color: #fff;
+
+      &:last-child {
+        margin-left: 80px;
+      }
+
+      span {
+        position: relative;
+        top: -6px;
+        left: -6px;
+        z-index: 5;
+        display: block;
+        width: 250px;
+        line-height: 45px;
+        background-color: #000;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+      }
+    }
+  }
+
+  .po-bg {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    z-index: -1;
   }
 }

@@ -93,6 +93,17 @@
           </div>
         </a-tab-pane>
       </a-tabs>
+      <div class="box-link">
+        <router-link to="">
+          <span>女生可以学什么专业？</span>
+        </router-link>
+        <router-link to="">
+          <span>男生可以学什么专业？</span>
+        </router-link>
+      </div>
+      <div class="po-bg">
+        <img src="http://www.gzomick.com/statics/images/index/img-bg-icon6.png" alt="">
+      </div>
     </div>
   </div>
 </template>
