@@ -10,6 +10,7 @@
     <Tables/>
     <Consultant/>
     <IntroductionTab/>
+    <Campus/>
   </div>
 </template>
 
@@ -22,10 +23,12 @@ import Consultant from "@/components/Consultant"
 import Tables from "@/components/Tables"
 import Admissions from "@/components/Admissions"
 import WanderTab from "@/components/WanderTab"
+import Campus from "@/components/Campus";
 
 export default {
   name: "Home",
   components: {
+    Campus,
     WanderTab,
     Admissions,
     Tables,
