@@ -98,6 +98,7 @@
         </router-link>
       </div>
     </div>
+    <IntroductionTab/>
   </div>
 </template>
 
@@ -105,6 +106,7 @@
 import Header from '@/components/universal/Header'
 import Nav from '@/components/universal/Nav'
 import Carousel from '@/components/universal/Carousel'
+import IntroductionTab from "@/components/IntroductionTab";
 
 const columns = [
   {
@@ -196,6 +198,7 @@ const dataRight = [
 export default {
   name: "Home",
   components: {
+    IntroductionTab,
     Header,
     Nav,
     Carousel,

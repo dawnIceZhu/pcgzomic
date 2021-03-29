@@ -1,0 +1,124 @@
+.introduction-tab {
+  margin-top: 66px;
+
+  .title-tab {
+    position: relative;
+    width: 458px;
+    height: 101px;
+    background-image: url(http://www.gzomick.com/statics/images/index/title_item2.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+    img {
+      position: absolute;
+      right: -260px;
+      top: 0;
+    }
+  }
+
+  /deep/ .ant-tabs-nav {
+    width: 1200px;
+  }
+
+  /deep/ .ant-tabs-nav .ant-tabs-tab {
+    width: 23%;
+    text-align: center;
+  }
+
+  .tabs-box {
+    .bg1 {
+      background-image: url(http://www.gzomick.com/statics/images/index/xd_bg.jpg);
+
+    }
+
+    .bg2 {
+      background-image: url(http://www.gzomick.com/statics/images/index/xg_bg.jpg);
+    }
+
+    .bg3 {
+      background-image: url(http://www.gzomick.com/statics/images/index/tj_bg.jpg);
+    }
+
+    .bg4 {
+      background-image: url(http://www.gzomick.com/statics/images/index/kf_bg.jpg);
+    }
+
+    .box-bg {
+      width: 1200px;
+      height: 348px;
+      background-repeat: no-repeat;
+
+      .box-left {
+        width: 729px;
+        height: 341px;
+        float: left;
+      }
+
+      .box-content {
+        height: 315px;
+        float: left;
+        padding-left: 90px;
+        margin-top: 26px;
+
+        h2 {
+          font-weight: bold;
+          //padding: 5px 0;
+        }
+
+        .box-time {
+          margin-top: 10px;
+          font-size: 16px;
+          background-color: #000;
+          color: #fff;
+          border: 1px dashed #fff;
+          //width: 230px;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+        }
+
+        .box-bor {
+          margin: 5px 0 15px;
+          border-top: 1px dashed #8d8d8d;
+        }
+
+        p {
+          padding-bottom: 5px;
+        }
+
+        ul {
+          margin-left: 15px;
+
+          li {
+            list-style: disc;
+            line-height: 25px;
+          }
+        }
+
+        a {
+          display: block;
+          width: 206px;
+          height: 48px;
+          border-radius: 20px;
+          line-height: 48px;
+          text-align: center;
+          margin: 0 auto;
+          background-color: #000;
+          color: #fff;
+          font-size: 18px;
+          cursor: pointer;
+          margin-top: 20px;
+
+          &::before {
+            position: relative;
+            content: url(http://www.gzomick.com/statics/images/index/zx_icon.png);
+            width: 24px;
+            height: 24px;
+            top: 5px;
+            left: -5px;
+          }
+        }
+      }
+    }
+  }
+}
