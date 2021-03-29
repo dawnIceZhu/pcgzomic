@@ -1,0 +1,41 @@
+.student-works {
+  margin-top: 25px;
+
+  .works-title {
+    text-align: center;
+  }
+
+  /deep/ .ant-tabs-nav {
+    width: 1200px;
+  }
+
+  /deep/ .ant-tabs-nav .ant-tabs-tab {
+    width: 23%;
+    text-align: center;
+  }
+
+  .works-tab {
+    margin-top: 30px;
+
+    .pane-content {
+      .pane-left {
+        float: left;
+      }
+
+      .pane-right {
+        width: 645px;
+        float: left;
+
+        div {
+          float: left;
+          margin-left: 5px;
+          margin-top: 5px;
+
+          &:nth-child(-n+3) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
