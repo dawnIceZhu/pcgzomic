@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
-import '@/styles/base.less'
+import '@/styles/universal/base.less'
 
 import Carousel3d from "vue-carousel-3d";
 

@@ -1,4 +1,5 @@
 <template>
+  <!-- 热门专业tab栏 -->
   <div class="introduction-tab">
     <div class="auto">
       <div class="title-tab">
@@ -100,9 +101,7 @@
 export default {
   name: "IntroductionTab",
   data() {
-    return {
-
-    }
+    return {}
   },
   methods: {
     callback(key) {

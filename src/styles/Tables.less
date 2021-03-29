@@ -1,0 +1,46 @@
+.table {
+  margin-top: 35px;
+
+  .ant-table-wrapper {
+    width: 50%;
+    float: left;
+
+    &:first-child {
+      border-right: 1px solid #e8e8e8;
+    }
+
+    /deep/ .ant-table-thead {
+      tr {
+        th {
+          text-align: center;
+        }
+      }
+
+      .ant-table-column-title {
+        font-weight: 700;
+        font-size: 15px;
+      }
+    }
+
+    /deep/ .ant-table-tbody {
+      tr {
+        td {
+          text-align: center;
+
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .ant-table-row-cell-ellipsis {
+        font-size: 12px;
+        text-align: center;
+
+        &:nth-child(4) {
+          color: red;
+        }
+      }
+    }
+  }
+}

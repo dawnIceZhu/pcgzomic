@@ -1,103 +1,14 @@
 <template>
-  <div class="index">
+  <div class="Home">
     <div class="auto">
       <Header/>
       <Nav/>
     </div>
     <Carousel/>
-    <div class="auto">
-      <div class="wander-tab">
-        <a-row :gutter="[8,7]">
-          <a-col :span="4">
-            <div></div>
-            <p>Entrepreneurship</p>
-            <p>创业</p>
-          </a-col>
-          <a-col :span="4">
-            <div></div>
-            <p>Obtain employment</p>
-            <p>就业</p>
-          </a-col>
-          <a-col :span="4">
-            <div></div>
-            <p>hobby</p>
-            <p>爱好</p>
-          </a-col>
-          <a-col :span="4">
-            <div></div>
-            <p>increase</p>
-            <p>提高</p>
-          </a-col>
-          <a-col :span="4">
-            <div></div>
-            <p>Study tour</p>
-            <p>游学</p>
-          </a-col>
-          <a-col :span="4">
-            <div></div>
-            <p>Regular class</p>
-            <p>长期班</p>
-          </a-col>
-          <a-col :span="4">
-            <div></div>
-            <p>Weekend class</p>
-            <p>短期班</p>
-          </a-col>
-        </a-row>
-      </div>
-    </div>
-    <div class="admissions">
-      <router-link to="">
-        <img src="http://www.gzomick.com/statics/images/index/tip-banner-zx.jpg" alt="">
-      </router-link>
-    </div>
-    <div class="auto">
-      <div class="table">
-        <a-table :columns="columns" :data-source="dataLeft" :pagination="false">
-          <a slot="name" slot-scope="text">{{ text }}</a>
-        </a-table>
-        <a-table :columns="columns" :data-source="dataRight" :pagination="false">
-          <a slot="name" slot-scope="text">{{ text }}</a>
-        </a-table>
-      </div>
-    </div>
-    <div class="consultant">
-      <div class="fix-img">
-        <img src="http://www.gzomick.com/statics/images/index/img-bg-icon3.png" alt="">
-      </div>
-
-      <carousel-3d>
-        <slide v-for="(i, index) in list" :key="index" :index="index">
-          <img :src="i">
-        </slide>
-      </carousel-3d>
-
-      <div class="floor">
-        <ul>
-          <li>
-            <div>
-              <p class="text-name">Nikita Gusev/尼基塔古斯夫</p>
-              <p class="text-title">欧米奇西点技术顾问</p>
-              <p>擅长：精通西点创意设计</p>
-              <p>
-                履历：<br>
-                曾在Sweet Gift蛋糕店、莫斯科奥萨蛋糕<br>
-                店、韩国烹饪学校，担任蛋糕设计师、雕刻师、西点教师等职务。<br>
-                荣誉：俄国蛋糕比赛银奖、俄国蛋糕比赛金奖、国际蛋糕杯比赛金奖<br>
-                韩国蛋糕比赛金奖。
-              </p>
-            </div>
-            <img src="http://www.gzomick.com/statics/images/index/teachers_info_img_1.jpg" alt="">
-          </li>
-        </ul>
-      </div>
-
-      <div class="omick-what">
-        <router-link to="">
-          <span>欧米奇学费怎么样?</span>
-        </router-link>
-      </div>
-    </div>
+    <WanderTab/>
+    <Admissions/>
+    <Tables/>
+    <Consultant/>
     <IntroductionTab/>
   </div>
 </template>
@@ -106,115 +17,30 @@
 import Header from '@/components/universal/Header'
 import Nav from '@/components/universal/Nav'
 import Carousel from '@/components/universal/Carousel'
-import IntroductionTab from "@/components/IntroductionTab";
-
-const columns = [
-  {
-    title: '专业',
-    dataIndex: 'name',
-    key: 'name',
-    scopedSlots: {customRender: 'name'}
-  },
-  {
-    title: '学制',
-    dataIndex: 'schoolSystem',
-    key: 'address 1',
-    ellipsis: true
-  },
-  {
-    title: '名额',
-    dataIndex: 'quota',
-    key: 'address 2',
-    ellipsis: true
-  },
-  {
-    title: '剩余名额',
-    dataIndex: 'remaining',
-    key: 'address 3',
-    ellipsis: true
-  }
-]
-const dataLeft = [
-  {
-    key: '1',
-    name: '烘焙甜点全能班',
-    schoolSystem: '15个月',
-    quota: 24,
-    remaining: 9,
-  },
-  {
-    key: '2',
-    name: '烘焙甜点金领班',
-    schoolSystem: '9个月',
-    quota: 24,
-    remaining: 7,
-  },
-  {
-    key: '3',
-    name: '烘焙甜点经典班',
-    schoolSystem: '3个月',
-    quota: 24,
-    remaining: 5,
-  },
-  {
-    key: '4',
-    name: '咖啡饮品班',
-    schoolSystem: '1个月',
-    quota: 24,
-    remaining: 8,
-  },
-]
-const dataRight = [
-  {
-    key: '5',
-    name: '西餐料理金领班',
-    schoolSystem: '9个月',
-    quota: 24,
-    remaining: 6,
-  },
-  {
-    key: '6',
-    name: '西餐料理精英班',
-    schoolSystem: '6个月',
-    quota: 24,
-    remaining: 5,
-  },
-  {
-    key: '7',
-    name: '西餐料理简餐班',
-    schoolSystem: '1个月',
-    quota: 24,
-    remaining: 8,
-  },
-  {
-    key: '8',
-    name: '精品调酒班',
-    schoolSystem: '2个月',
-    quota: 24,
-    remaining: 8,
-  },
-]
+import IntroductionTab from "@/components/IntroductionTab"
+import Consultant from "@/components/Consultant"
+import Tables from "@/components/Tables"
+import Admissions from "@/components/Admissions"
+import WanderTab from "@/components/WanderTab"
 
 export default {
   name: "Home",
   components: {
+    WanderTab,
+    Admissions,
+    Tables,
+    Consultant,
     IntroductionTab,
     Header,
     Nav,
     Carousel,
   },
   data() {
-    return {
-      dataLeft,
-      dataRight,
-      columns,
-      // list: Array(5).fill().map((_, i) => `http://lorempixel.com/400/200/sports/${i}/`)
-      list: Array(5).fill().map((_, i) => `http://www.gzomick.com/statics/images/index/teachers_swiper${i + 1}.jpg`)
-    }
+    return {}
   }
 }
 </script>
 
 <style scoped lang="less">
-@import "src/styles/index";
+@import "../../styles/Home";
 </style>
