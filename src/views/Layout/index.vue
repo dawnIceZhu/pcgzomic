@@ -12,6 +12,7 @@
     <IntroductionTab/>
     <Campus/>
     <StudentWorks/>
+    <Guide/>
   </div>
 </template>
 
@@ -26,10 +27,12 @@ import Admissions from "@/components/Admissions"
 import WanderTab from "@/components/WanderTab"
 import Campus from "@/components/Campus";
 import StudentWorks from "@/components/StudentWorks";
+import Guide from "@/components/Guide";
 
 export default {
   name: "Home",
   components: {
+    Guide,
     StudentWorks,
     Campus,
     WanderTab,
