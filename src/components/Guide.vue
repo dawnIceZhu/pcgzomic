@@ -1,4 +1,5 @@
 <template>
+  <!-- 创就业指导 -->
   <div class="guide">
     <div class="auto">
       <div class="guide-title"></div>
@@ -27,8 +28,13 @@
         </router-link>
       </div>
       <div class="guide-cooperation">
-        <div class="cooperation-title">
+        <div class="cooperation-title"></div>
+        <div class="cooperation-content">
+          <div class="cooperation-carousel">
 
+          </div>
+          <div class="carousel-prev"></div>
+          <div class="carousel-next"></div>
         </div>
       </div>
     </div>
