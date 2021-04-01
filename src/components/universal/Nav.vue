@@ -12,13 +12,28 @@
           <h3 class="ant-dropdown-link" @click="e => e.preventDefault()">热门课程</h3>
           <a-menu slot="overlay">
             <a-menu-item>
-              <a href="javascript:;">1st menu item</a>
+              <a href="javascript:;">烘焙甜品全能班</a>
             </a-menu-item>
             <a-menu-item>
-              <a href="javascript:;">2nd menu item</a>
+              <a href="javascript:;">烘焙甜点金领班</a>
             </a-menu-item>
             <a-menu-item>
-              <a href="javascript:;">3rd menu item</a>
+              <a href="javascript:;">烘焙甜点经典班</a>
+            </a-menu-item>
+            <a-menu-item>
+              <a href="javascript:;">西餐料理金领班</a>
+            </a-menu-item>
+            <a-menu-item>
+              <a href="javascript:;">西餐料理精英班</a>
+            </a-menu-item>
+            <a-menu-item>
+              <a href="javascript:;">西餐料理简餐班</a>
+            </a-menu-item>
+            <a-menu-item>
+              <a href="javascript:;">精品调酒班</a>
+            </a-menu-item>
+            <a-menu-item>
+              <a href="javascript:;">咖啡饮品班</a>
             </a-menu-item>
           </a-menu>
         </a-dropdown>

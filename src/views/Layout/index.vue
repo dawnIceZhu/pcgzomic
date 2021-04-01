@@ -13,6 +13,7 @@
     <Campus/>
     <StudentWorks/>
     <Guide/>
+    <Footer/>
   </div>
 </template>
 
@@ -25,9 +26,10 @@ import Consultant from "@/components/Consultant"
 import Tables from "@/components/Tables"
 import Admissions from "@/components/Admissions"
 import WanderTab from "@/components/WanderTab"
-import Campus from "@/components/Campus";
-import StudentWorks from "@/components/StudentWorks";
-import Guide from "@/components/Guide";
+import Campus from "@/components/Campus"
+import StudentWorks from "@/components/StudentWorks"
+import Guide from "@/components/Guide"
+import Footer from "@/components/Footer"
 
 export default {
   name: "Home",
@@ -43,6 +45,7 @@ export default {
     Header,
     Nav,
     Carousel,
+    Footer
   },
   data() {
     return {}
