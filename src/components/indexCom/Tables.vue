@@ -114,5 +114,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "src/styles/Tables";
+@import "src/styles/indexLess/Tables";
 </style>

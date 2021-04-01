@@ -50,5 +50,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "src/styles/WanderTab";
+@import "src/styles/indexLess/WanderTab";
 </style>

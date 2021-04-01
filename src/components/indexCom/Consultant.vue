@@ -52,5 +52,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "src/styles/Consultant";
+@import "src/styles/indexLess/Consultant";
 </style>

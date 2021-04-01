@@ -48,5 +48,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "../../src/styles/Guide";
+@import "src/styles/indexLess/Guide";
 </style>

@@ -21,15 +21,15 @@
 import Header from '@/components/universal/Header'
 import Nav from '@/components/universal/Nav'
 import Carousel from '@/components/universal/Carousel'
-import IntroductionTab from "@/components/IntroductionTab"
-import Consultant from "@/components/Consultant"
-import Tables from "@/components/Tables"
-import Admissions from "@/components/Admissions"
-import WanderTab from "@/components/WanderTab"
-import Campus from "@/components/Campus"
-import StudentWorks from "@/components/StudentWorks"
-import Guide from "@/components/Guide"
-import Footer from "@/components/Footer"
+import IntroductionTab from "@/components/indexCom/IntroductionTab"
+import Consultant from "@/components/indexCom/Consultant"
+import Tables from "@/components/indexCom/Tables"
+import Admissions from "@/components/indexCom/Admissions"
+import WanderTab from "@/components/indexCom/WanderTab"
+import Campus from "@/components/indexCom/Campus"
+import StudentWorks from "@/components/indexCom/StudentWorks"
+import Guide from "@/components/indexCom/Guide"
+import Footer from "@/components/universal/Footer"
 
 export default {
   name: "Home",
@@ -54,5 +54,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "../../styles/Home";
+@import "src/styles/indexLess/Home";
 </style>

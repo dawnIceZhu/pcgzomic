@@ -123,5 +123,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "src/styles/IntroductionTab";
+@import "src/styles/indexLess/IntroductionTab";
 </style>

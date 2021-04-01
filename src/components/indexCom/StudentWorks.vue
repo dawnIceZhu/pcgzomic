@@ -155,5 +155,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "src/styles/StudentWorks";
+@import "src/styles/indexLess/StudentWorks";
 </style>

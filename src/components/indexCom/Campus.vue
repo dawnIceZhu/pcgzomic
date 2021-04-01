@@ -43,5 +43,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "src/styles/Campus";
+@import "src/styles/indexLess/Campus";
 </style>
