@@ -1,4 +1,5 @@
 <template>
+  <!-- 活力校园 -->
   <div class="vibrant-campus">
     活力校园
   </div>
